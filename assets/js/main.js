@@ -1019,12 +1019,14 @@ const showMovie = (movieDataBase) =>
     {
         movieGallery.innerHTML += 
         `<div>
-            <h3>${movie[0]}<h3>
-            <p>${movie[1]}<p>
-            <h4>${movie[2]}<h4>
-            <p>${movie[3]}<p>
-            <p>${movie[4].join(', ')}<p>
-            <p>${movie[5]}<p>
+            <h3>${movie[0]}</h3>
+            <div class="movie_infos"> 
+                <p>${movie[1]}</p>
+                <h4>${movie[2]}</h4>
+                <p>${movie[3]}</p>
+                <p>${movie[4].join(', ')}</p>
+                <p>${movie[5]}</p>
+            </div>
         </div>`;
     })
 };
