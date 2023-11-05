@@ -1010,6 +1010,7 @@ const yearUpBtn = document.body.querySelector('#yearUpBtn');
 const yearDownBtn = document.body.querySelector('#yearDownBtn');
 const bestRateBtn = document.body.querySelector('#bestRateBtn');
 const movieGallery = document.body.querySelector('#movieGallery');
+const genreSelect = document.body.querySelector('#genre');
 
 // display movie gallery
 const showMovie = (movieDataBase) => 
@@ -1055,6 +1056,22 @@ searchbar.addEventListener('input', () =>
     {
         movieGallery.innerHTML = "<p>Titel not found 👀</p>";
     }
+});
+
+// search for genre
+genreSelect.addEventListener('change', () =>
+{
+    movieGallery.innerHTML = "";
+    const selectedGenre = genreSelect.value;
+
+    const genreMatch = movies.filter((movie) =>
+    {
+        if(movie[4].includes(selectedGenre))
+        {
+            return movie;
+        }
+    });
+    showMovie(genreMatch);
 });
 
 // sort movies: year up
