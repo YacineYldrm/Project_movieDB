@@ -1071,7 +1071,14 @@ genreSelect.addEventListener('change', () =>
             return movie;
         }
     });
-    showMovie(genreMatch);
+    if(selectedGenre !== "All")
+    {
+        showMovie(genreMatch);
+    }
+    else if (selectedGenre === "All")
+    {
+        showMovie(movies);
+    }
 });
 
 // sort movies: year up

@@ -24,6 +24,7 @@ body img {
 body .hero_wrapper {
   height: 58vh;
   display: flex;
+  width: 100%;
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -41,10 +42,12 @@ body .hero_wrapper form {
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 100%;
   gap: 12px;
 }
 body .hero_wrapper form div:nth-of-type(1) input {
-  width: 496px;
+  width: 34.4vw;
+  min-width: 250px;
   height: 44px;
   border-radius: 4px;
   border: 1px solid black;
@@ -56,7 +59,8 @@ body .hero_wrapper form div:nth-of-type(1) input:focus {
 }
 body .hero_wrapper form div:nth-of-type(2) input, body .hero_wrapper form select {
   text-align: center;
-  width: 118px;
+  width: 8.2vw;
+  min-width: 80px;
   height: 28px;
   border-radius: 4px;
   background-color: #008170;
@@ -69,7 +73,7 @@ body .hero_wrapper form div:nth-of-type(2) input:hover, body .hero_wrapper form 
 }
 body .movie_gallery_wrapper {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(380px, 1fr));
   gap: 24px;
   padding-inline: 2%;
   position: relative;
