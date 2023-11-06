@@ -1039,7 +1039,7 @@ searchbar.addEventListener('input', () =>
     event.preventDefault();
     movieGallery.innerHTML = "";
     const userInput = searchInput.value.trim().toLowerCase();
-    
+
     // compare case-insensitive
     const movieMatch = movies.filter((movie) => 
     {
@@ -1056,7 +1056,7 @@ searchbar.addEventListener('input', () =>
     }
     else
     {
-        movieGallery.innerHTML = "<p>Titel not found 👀</p>";
+        movieGallery.innerHTML = `<p>"${userInput}" not found 👀</p>`;
     }
 });
 
