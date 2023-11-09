@@ -34,6 +34,8 @@ https://github.com/YacineYldrm/Project_movieDB
 
 # Flowchart
 
+<img width="702" alt="Screenshot flowchart" src="./assets/resources/movieDB_flowChart.png">
+
 # Notes
 
 This project was created as part of a coding bootcamp at supercode.de. The application allows for easy and quick searching in a movie database and sorting of films. The README.md file also serves as an application document, showcasing my skills in web development.
