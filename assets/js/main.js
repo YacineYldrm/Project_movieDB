@@ -1039,7 +1039,6 @@ searchbar.addEventListener('input', () =>
     event.preventDefault();
     movieGallery.innerHTML = "";
     const userInput = searchInput.value.trim().toLowerCase();
-    calcMatchRate(userInput);
 
     // compare case-insensitive
     const movieMatch = movies.filter((movie) => 
