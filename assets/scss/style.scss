@@ -101,7 +101,7 @@ body
     .movie_gallery_wrapper
     {
         display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+        grid-template-columns: repeat(auto-fill, minmax(380px, 1fr));
         gap: 24px;
         padding-inline: 2%;
         position: relative;
