@@ -1,6 +1,5 @@
 # JavaScript Project: Movie Database
 
-Description
 This JavaScript project was created as part of a fullstack web dev bootcamp at supercode.de. It is a movie database where films are displayed as a gallery from an array.
 
 # The application provides the following features
